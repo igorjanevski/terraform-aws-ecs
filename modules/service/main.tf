@@ -807,6 +807,7 @@ data "aws_iam_policy_document" "task_exec" {
       "ecr:BatchCheckLayerAvailability",
       "ecr:GetDownloadUrlForLayer",
       "ecr:BatchGetImage",
+      "secretsmanager:GetSecretValue",
     ]
     resources = ["*"]
   }
